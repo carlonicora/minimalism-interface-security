@@ -4,12 +4,6 @@ namespace CarloNicora\Minimalism\Interfaces\Security\Interfaces;
 interface SecurityInterface
 {
     /**
-     * @return SecurityInterface
-     */
-    public function getSecurityInterface(
-    ) : SecurityInterface;
-
-    /**
      * @param string $verb
      * @param string $uri
      * @param array|null $body
