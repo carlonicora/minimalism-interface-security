@@ -4,14 +4,14 @@ namespace CarloNicora\Minimalism\Interfaces\Security\Interfaces;
 interface SecurityInterface
 {
     /**
-     * @param string|null $verb
-     * @param string|null $uri
-     * @param array|null $body
-     * @return bool
+     * @return int|null
      */
-    public function isSignatureValid(
-        ?string $verb=null,
-        ?string $uri=null,
-        ?array $body=null,
-    ) : bool;
+    public function getUserId(
+    ): ?int;
+
+    /**
+     * @return bool|null
+     */
+    public function isUser(
+    ): ?bool;
 }
