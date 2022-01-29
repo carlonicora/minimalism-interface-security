@@ -1,7 +1,9 @@
 <?php
 namespace CarloNicora\Minimalism\Interfaces\Security\Interfaces;
 
-interface SecurityInterface
+use CarloNicora\Minimalism\Interfaces\ServiceInterface;
+
+interface SecurityInterface extends ServiceInterface
 {
     /**
      * @return int|null
