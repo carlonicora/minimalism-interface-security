@@ -16,4 +16,10 @@ interface SecurityInterface extends ServiceInterface
      */
     public function isUser(
     ): ?bool;
+
+    /**
+     * @return ApplicationInterface|null
+     */
+    public function getApp(
+    ): ?ApplicationInterface;
 }
